@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c0als31tabbgj"]
+
+[ext_resource type="Texture2D" uid="uid://dw8utsij8a3uk" path="res://assets/textures/color-palette.png" id="1_lclod"]
+
+[resource]
+albedo_texture = ExtResource("1_lclod")
+texture_filter = 0

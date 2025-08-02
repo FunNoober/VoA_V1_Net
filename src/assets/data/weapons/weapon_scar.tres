@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://c8m4qfjuex0sn"]
+
+[ext_resource type="AudioStream" uid="uid://cudkgh25m21xv" path="res://assets/sounds/weapons/shoot/shoot_supressed.mp3" id="1_sij11"]
+[ext_resource type="PackedScene" uid="uid://cr57iok1jy4wi" path="res://assets/prefabs/weapons/pickups/weaponpickup_bullpup.tscn" id="2_772pw"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_wb5b6"]
+
+[sub_resource type="Curve" id="Curve_gn3w6"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_wb5b6")
+WeaponName = "weapon_scar"
+WeaponPickup = ExtResource("2_772pw")
+WeaponDamage = 34.0
+WeaponFirerate = 0.27
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_gn3w6")
+WeaponRange = -500.0
+WeaponMagSize = 20
+ShootSound = ExtResource("1_sij11")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(1, 0.5)
+HorizontalSpread = Vector2(-2, 2)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = true
+illuminator_position = Vector3(0.57, 0.12, 0)

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://bxk734m7ehl3i"]
+
+[ext_resource type="AudioStream" uid="uid://dvubh5t2c4bul" path="res://assets/sounds/weapons/shoot/shoot_mp9.mp3" id="1_y3lun"]
+[ext_resource type="PackedScene" uid="uid://cojy0wep0uuqt" path="res://assets/prefabs/weapons/pickups/weaponpickup_mp9.tscn" id="2_xq5oe"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_t2ed6"]
+
+[sub_resource type="Curve" id="Curve_p66wp"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_t2ed6")
+WeaponName = "weapon_p90"
+WeaponPickup = ExtResource("2_xq5oe")
+WeaponDamage = 15.0
+WeaponFirerate = 0.05
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_p66wp")
+WeaponRange = -65.0
+WeaponMagSize = 50
+ShootSound = ExtResource("1_y3lun")
+PlaySound = true
+IsHeavy = false
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(0.25, 0.125)
+HorizontalSpread = Vector2(-2, 2)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0, 0, 0)

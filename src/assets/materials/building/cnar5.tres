@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bpldxohaa8cc"]
+
+[ext_resource type="Texture2D" uid="uid://bfu28nstsxaty" path="res://assets/textures/building/CNAR5.png" id="1_3rbb7"]
+
+[resource]
+albedo_texture = ExtResource("1_3rbb7")
+metallic_specular = 0.0
+uv1_triplanar = true
+texture_filter = 0

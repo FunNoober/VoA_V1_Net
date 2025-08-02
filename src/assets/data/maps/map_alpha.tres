@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=3 format=3 uid="uid://co2d1b1egvou2"]
+
+[ext_resource type="PackedScene" uid="uid://781y0xmc2c40" path="res://assets/prefabs/maps/map_alpha.tscn" id="1_751dm"]
+[ext_resource type="Script" path="res://assets/scripts/map/map_data.gd" id="1_lynvf"]
+
+[resource]
+script = ExtResource("1_lynvf")
+map_name = "Alpha"
+map_scene = ExtResource("1_751dm")

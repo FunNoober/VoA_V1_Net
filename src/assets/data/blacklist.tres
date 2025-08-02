@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="WordBlackist" load_steps=2 format=3 uid="uid://cu26cjke3l5pi"]
+
+[ext_resource type="Script" path="res://assets/scripts/managers/word_blacklist.gd" id="1_3n0rm"]
+
+[resource]
+script = ExtResource("1_3n0rm")

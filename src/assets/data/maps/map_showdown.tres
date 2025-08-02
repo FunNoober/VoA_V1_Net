@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=3 format=3 uid="uid://dbc4mfjtbjy3r"]
+
+[ext_resource type="PackedScene" uid="uid://bhe5pi3vuuqu" path="res://assets/prefabs/maps/map_showdown.tscn" id="1_v61ub"]
+[ext_resource type="Script" path="res://assets/scripts/map/map_data.gd" id="2_yd28s"]
+
+[resource]
+script = ExtResource("2_yd28s")
+map_name = "map_showdown"
+map_scene = ExtResource("1_v61ub")

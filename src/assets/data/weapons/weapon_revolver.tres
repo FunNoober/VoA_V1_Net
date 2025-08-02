@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://du4up1oecaqmd"]
+
+[ext_resource type="AudioStream" uid="uid://b2ppa71w6g67f" path="res://assets/sounds/weapons/shoot/shoot_revolver.mp3" id="1_jsxj7"]
+[ext_resource type="PackedScene" uid="uid://dg886gyhpkbna" path="res://assets/prefabs/weapons/pickups/weaponpickup_revolver.tscn" id="2_mcv05"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_jsmdu"]
+
+[sub_resource type="Curve" id="Curve_h5jra"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.750583, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[resource]
+script = ExtResource("3_jsmdu")
+WeaponName = "weapon_revolver"
+WeaponPickup = ExtResource("2_mcv05")
+WeaponDamage = 50.0
+WeaponFirerate = 1.0
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_h5jra")
+WeaponRange = -150.0
+WeaponMagSize = 6
+ShootSound = ExtResource("1_jsxj7")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(15, 7)
+HorizontalSpread = Vector2(-1, 1)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0, 0, 0)

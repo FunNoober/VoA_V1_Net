@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://b5dx6hie7cvac"]
+
+[ext_resource type="AudioStream" uid="uid://cudkgh25m21xv" path="res://assets/sounds/weapons/shoot/shoot_supressed.mp3" id="1_3cw77"]
+[ext_resource type="PackedScene" uid="uid://bwi7ve5ldlxnu" path="res://assets/prefabs/weapons/pickups/weaponpickup_sopmod.tscn" id="2_fqvpx"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_5fodo"]
+
+[sub_resource type="Curve" id="Curve_a178c"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_5fodo")
+WeaponName = "weapon_sopmod"
+WeaponPickup = ExtResource("2_fqvpx")
+WeaponDamage = 20.0
+WeaponFirerate = 0.1
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_a178c")
+WeaponRange = -500.0
+WeaponMagSize = 30
+ShootSound = ExtResource("1_3cw77")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(1, 0.5)
+HorizontalSpread = Vector2(-2, 2)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = false
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0.57, 0.12, 0)

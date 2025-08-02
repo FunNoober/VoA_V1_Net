@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=3 format=3 uid="uid://dy2i3aag12k7t"]
+
+[ext_resource type="PackedScene" uid="uid://c3rbv31x2qd03" path="res://assets/prefabs/maps/map_gym.tscn" id="1_vf21c"]
+[ext_resource type="Script" path="res://assets/scripts/map/map_data.gd" id="2_rvcrn"]
+
+[resource]
+script = ExtResource("2_rvcrn")
+map_name = "map_gym"
+map_scene = ExtResource("1_vf21c")

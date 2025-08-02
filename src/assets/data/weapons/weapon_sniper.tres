@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://bi0mu1twjh1wl"]
+
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="1_aht6g"]
+[ext_resource type="AudioStream" uid="uid://dhohdjfksipv5" path="res://assets/sounds/weapons/shoot/shoot_sniper.mp3" id="1_csfxc"]
+[ext_resource type="PackedScene" uid="uid://ghf0akrvjk8u" path="res://assets/prefabs/weapons/pickups/weaponpickup_sniper.tscn" id="2_umci2"]
+
+[sub_resource type="Curve" id="Curve_3k35f"]
+_data = [Vector2(0, 0.503761), 0.0, 0.0, 0, 0, Vector2(0.102564, 1), 0.0, 0.0, 0, 0, Vector2(0.948718, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.0980774), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[resource]
+script = ExtResource("1_aht6g")
+WeaponName = "weapon_sniper"
+WeaponPickup = ExtResource("2_umci2")
+WeaponDamage = 1000.0
+WeaponFirerate = 1.0
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_3k35f")
+WeaponRange = -500.0
+WeaponMagSize = 10
+ShootSound = ExtResource("1_csfxc")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(12, 2)
+HorizontalSpread = Vector2(-1, 1)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 1
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0, 0, 0)

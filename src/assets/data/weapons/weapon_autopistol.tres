@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://b6fj20vipon61"]
+
+[ext_resource type="AudioStream" uid="uid://dvubh5t2c4bul" path="res://assets/sounds/weapons/shoot/shoot_mp9.mp3" id="1_sq5sp"]
+[ext_resource type="PackedScene" uid="uid://ieef8od7k3vj" path="res://assets/prefabs/weapons/pickups/weaponpickup_autopistol.tscn" id="2_2qj7a"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_83u0v"]
+
+[sub_resource type="Curve" id="Curve_s0j7u"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_83u0v")
+WeaponName = "weapon_autopistol"
+WeaponPickup = ExtResource("2_2qj7a")
+WeaponDamage = 20.0
+WeaponFirerate = 0.08
+use_ammo_counter = false
+damage_falloff = SubResource("Curve_s0j7u")
+WeaponRange = -85.0
+WeaponMagSize = 15
+ShootSound = ExtResource("1_sq5sp")
+PlaySound = true
+IsHeavy = false
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(2.5, 1.25)
+HorizontalSpread = Vector2(-1, 1)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = false
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0, 0, 0)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=3 format=3 uid="uid://cafeirmxgwioy"]
+
+[ext_resource type="PackedScene" uid="uid://bjmdjtxmpeqb2" path="res://assets/prefabs/maps/map_breachpoint.tscn" id="1_6j1pd"]
+[ext_resource type="Script" path="res://assets/scripts/map/map_data.gd" id="2_fu367"]
+
+[resource]
+script = ExtResource("2_fu367")
+map_name = "map_breachpoint"
+map_scene = ExtResource("1_6j1pd")

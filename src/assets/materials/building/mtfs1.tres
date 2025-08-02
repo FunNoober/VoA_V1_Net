@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bq3xs3b1q0046"]
+
+[ext_resource type="Texture2D" uid="uid://cqw3ar0m85let" path="res://assets/textures/building/MTFS1.png" id="1_2vg51"]
+
+[resource]
+albedo_texture = ExtResource("1_2vg51")
+metallic_specular = 0.0
+uv1_triplanar = true
+texture_filter = 0

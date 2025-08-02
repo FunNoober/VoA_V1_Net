@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=3 format=3 uid="uid://1wsonq14ctmn"]
+
+[ext_resource type="PackedScene" uid="uid://c3qp07m77kyq2" path="res://assets/prefabs/maps/map_dividedattention.tscn" id="1_ufpki"]
+[ext_resource type="Script" path="res://assets/scripts/map/map_data.gd" id="2_opwda"]
+
+[resource]
+script = ExtResource("2_opwda")
+map_name = "map_dividedattention"
+map_scene = ExtResource("1_ufpki")

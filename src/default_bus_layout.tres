@@ -1,0 +1,13 @@
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://c085dvetn1uer"]
+
+[sub_resource type="AudioEffectEQ" id="AudioEffectEQ_jnjab"]
+resource_name = "EQ"
+band_db/32_hz = -60.0
+band_db/100_hz = -30.0
+band_db/320_hz = -10.0
+band_db/3200_hz = -10.0
+band_db/10000_hz = -30.0
+
+[resource]
+bus/0/effect/0/effect = SubResource("AudioEffectEQ_jnjab")
+bus/0/effect/0/enabled = true

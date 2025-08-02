@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://djjj8r4plrcyq"]
+
+[ext_resource type="Texture2D" uid="uid://bdfilgpva8cct" path="res://addons/kenney_prototype_textures/dark/texture_04.png" id="1_lfuex"]
+[ext_resource type="Texture2D" uid="uid://4jnr6nj7l7vf" path="res://assets/textures/pbr/Concrete031_1K-PNG_NormalGL.png" id="2_y37op"]
+
+[resource]
+albedo_texture = ExtResource("1_lfuex")
+metallic_specular = 0.0
+normal_enabled = true
+normal_scale = -16.0
+normal_texture = ExtResource("2_y37op")
+uv1_triplanar = true
+uv1_world_triplanar = true
+proximity_fade_distance = 0.01
+distance_fade_max_distance = 0.0

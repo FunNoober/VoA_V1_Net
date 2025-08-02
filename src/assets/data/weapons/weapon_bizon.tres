@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://dyiwcm5ipgfqf"]
+
+[ext_resource type="AudioStream" uid="uid://depo15ewil5oh" path="res://assets/sounds/weapons/shoot/shoot_ak47.mp3" id="1_r56xg"]
+[ext_resource type="PackedScene" uid="uid://cf2ln4wus1n3d" path="res://assets/prefabs/weapons/pickups/weaponpickup_bizon.tscn" id="2_qavg5"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_r5rw7"]
+
+[sub_resource type="Curve" id="Curve_72lce"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_r5rw7")
+WeaponName = "weapon_bizon"
+WeaponPickup = ExtResource("2_qavg5")
+WeaponDamage = 16.0
+WeaponFirerate = 0.07
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_72lce")
+WeaponRange = -150.0
+WeaponMagSize = 30
+ShootSound = ExtResource("1_r56xg")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(1.25, 0.45)
+HorizontalSpread = Vector2(-2, 2)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = true
+illuminator_position = Vector3(0, 0, 0)

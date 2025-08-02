@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://ckwduypwux81y"]
+
+[ext_resource type="AudioStream" uid="uid://38muy3wkgj45" path="res://assets/sounds/weapons/shoot/shoot_shotgun.mp3" id="1_er8dk"]
+[ext_resource type="PackedScene" uid="uid://bwr3113vv8b73" path="res://assets/prefabs/weapons/pickups/weaponpickup_shotgunshorty.tscn" id="2_88mot"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_rdwrp"]
+
+[sub_resource type="Curve" id="Curve_34fov"]
+_data = [Vector2(0.251748, 1), 0.0, -2.86548, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_rdwrp")
+WeaponName = "weapon_shotgunshorty"
+WeaponPickup = ExtResource("2_88mot")
+WeaponDamage = 25.0
+WeaponFirerate = 1.5
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_34fov")
+WeaponRange = -25.0
+WeaponMagSize = 6
+ShootSound = ExtResource("1_er8dk")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 1.0
+WeaponRecoil = Vector2(4, 2)
+HorizontalSpread = Vector2(-1, 1)
+SpeedModifier = 1.0
+RaycastCount = 4
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = false
+illuminator_position = Vector3(0, 0, 0)

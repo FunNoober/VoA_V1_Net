@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3 uid="uid://b4k7flkplu4vy"]
+
+[ext_resource type="AudioStream" uid="uid://depo15ewil5oh" path="res://assets/sounds/weapons/shoot/shoot_ak47.mp3" id="1_hu6k6"]
+[ext_resource type="PackedScene" uid="uid://m4t4rb4w45m5" path="res://assets/prefabs/weapons/pickups/weaponpickup_ak47.tscn" id="2_bdx2e"]
+[ext_resource type="Script" path="res://assets/scripts/weapons/weapon_data.gd" id="3_gk6rp"]
+
+[sub_resource type="Curve" id="Curve_8sxts"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.1017), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("3_gk6rp")
+WeaponName = "weapon_ak47"
+WeaponPickup = ExtResource("2_bdx2e")
+WeaponDamage = 25.0
+WeaponFirerate = 0.107
+use_ammo_counter = true
+damage_falloff = SubResource("Curve_8sxts")
+WeaponRange = -150.0
+WeaponMagSize = 30
+ShootSound = ExtResource("1_hu6k6")
+PlaySound = true
+IsHeavy = true
+RaycastRandomness = 0.0
+WeaponRecoil = Vector2(2.167, 0.5)
+HorizontalSpread = Vector2(-1, 1)
+SpeedModifier = 1.0
+RaycastCount = 1
+weapon_aim = 0
+supports_optic = true
+optic_position = Vector3(0, 0, 0)
+supports_grip = false
+grip_position = Vector3(0, 0, 0)
+supports_illuminator = true
+illuminator_position = Vector3(0, 0, 0)
